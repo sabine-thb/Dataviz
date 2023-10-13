@@ -59,9 +59,14 @@ section{
     bottom:100px;
     left:50%;
     transform: translate(-50%, 0);
+    border:none;
+    cursor:pointer;
+    transition: padding 0.2s ease-in-out;
 
-    
-   
+}
+
+.button-decouvrir:hover{
+    padding:15px 30px;
 }
 
 .deux {
