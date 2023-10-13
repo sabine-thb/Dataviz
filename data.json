@@ -1,3 +1,4 @@
+ [ 
   [
     {
       "title": "Dans le monde",
@@ -58,8 +59,8 @@
         }
       ]
     }
-  ]
-  
+  ],
+
   [
     {
       "title": "Afrique",
@@ -120,7 +121,7 @@
         }
       ]
     }
-  ]
+  ],
   [
     {
       "title": "Asie",
@@ -181,7 +182,7 @@
         }
       ]
     }
-  ]
+  ],
   [
     {
       "title": "Amérique latine et caraïbes",
@@ -243,3 +244,4 @@
       ]
     }
   ]
+]
