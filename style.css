@@ -8,6 +8,8 @@ body {
     font-family: 'krubregular';
 }
 
+/* On met en place la première "slide" */
+
 section{
     height:100vh;
 }
