@@ -125,7 +125,7 @@ p{
 /*On met en place la 3ème slide*/
 
 .trois{
-    height: 100vh;
+    /* height: 80vh; */
     display:grid;
     grid-template-areas: 
         "choix evol evol constat"
@@ -146,6 +146,7 @@ p{
     border: solid 20px rgba(220, 225, 194, 0.70);
     grid-area: evol;
     display:flex;
+    flex-direction: column;
     padding:30px;
     box-sizing: border-box;
 }
@@ -155,17 +156,24 @@ p{
     border: solid 20px #fffbe8;
     grid-area: facteurs;
     display:flex;
+    flex-direction: column;
     padding:30px;
     box-sizing: border-box;
 
 }
 
-
-
 .constat{
     background-color: #D0B48F;
     grid-area: constat;
 }
+
+.titreGraph{
+    font-size:1.2rem;
+}
+
+
+
+
 
 
 
