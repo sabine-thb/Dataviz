@@ -1,10 +1,10 @@
 export const dataMonde = {
     facteur: [
-        { cause: "Fléchissement économique", count: 0.62 },
-        { cause: "Fléchissement économique + catastrophes climatiques", count: 1.2 },
-        { cause: "Fléchissement économique + conflits", count: 2.23 },
-        { cause: "Fléchissement économique + catastrophes climatiques + conflits", count: 3.25 },
-        { cause: "Pas de fléchissement économique", count: 0.5 }
+        { cause: ["Fléchissement","économique"], count: 0.62 },
+        { cause: ["Fléchissement économique +","catastrophes climatiques"], count: 1.2 },
+        { cause: ["Fléchissement économique +","conflits"], count: 2.23 },
+        { cause: ["Fléchissement économique +","catastrophes climatiques +","conflits"], count: 3.25 },
+        { cause: ["Pas de fléchissement","économique"], count: 0.5 }
     ],
     evolution: [
         { year: 2005, value: 12.4 },
@@ -20,11 +20,11 @@ export const dataMonde = {
 
 export const datAfrique = {
     facteur: [
-        { cause: "Fléchissement économique", count: 0.62 },
-        { cause: "Fléchissement économique + catastrophes climatiques", count: 1.2 },
-        { cause: "Fléchissement économique + conflits", count: 2.23 },
-        { cause: "Fléchissement économique + catastrophes climatiques + conflits", count: 3.25 },
-        { cause: "Pas de fléchissement économique", count: 0.5 }
+        { cause: ["Fléchissement","économique"], count: 0.62 },
+        { cause: ["Fléchissement économique +","catastrophes climatiques"], count: 1.2 },
+        { cause: ["Fléchissement économique +","conflits"], count: 2.23 },
+        { cause: ["Fléchissement économique +","catastrophes climatiques +","conflits"], count: 3.25 },
+        { cause: ["Pas de fléchissement","économique"], count: 0.5 }
     ],
     evolution: [
         { year: 2005, value: 12.4 },
@@ -40,11 +40,11 @@ export const datAfrique = {
 
 export const datAsie = {
     facteur: [
-        { cause: "Fléchissement économique", count: 0.62 },
-        { cause: "Fléchissement économique + catastrophes climatiques", count: 1.2 },
-        { cause: "Fléchissement économique + conflits", count: 2.23 },
-        { cause: "Fléchissement économique + catastrophes climatiques + conflits", count: 3.25 },
-        { cause: "Pas de fléchissement économique", count: 0.5 }
+        { cause: ["Fléchissement","économique"], count: 0.62 },
+        { cause: ["Fléchissement économique +","catastrophes climatiques"], count: 1.2 },
+        { cause: ["Fléchissement économique +","conflits"], count: 2.23 },
+        { cause: ["Fléchissement économique +","catastrophes climatiques +","conflits"], count: 3.25 },
+        { cause: ["Pas de fléchissement","économique"], count: 0.5 }
     ],
     evolution: [
         { year: 2005, value: 12.4 },
@@ -60,11 +60,11 @@ export const datAsie = {
 
 export const datAmlat = {
     facteur: [
-        { cause: "Fléchissement économique", count: 0.62 },
-        { cause: "Fléchissement économique + catastrophes climatiques", count: 1.2 },
-        { cause: "Fléchissement économique + conflits", count: 2.23 },
-        { cause: "Fléchissement économique + catastrophes climatiques + conflits", count: 3.25 },
-        { cause: "Pas de fléchissement économique", count: 0.5 }
+        { cause: ["Fléchissement","économique"], count: 0.62 },
+        { cause: ["Fléchissement économique +","catastrophes climatiques"], count: 1.2 },
+        { cause: ["Fléchissement économique +","conflits"], count: 2.23 },
+        { cause: ["Fléchissement économique +","catastrophes climatiques +","conflits"], count: 3.25 },
+        { cause: ["Pas de fléchissement","économique"], count: 0.5 }
     ],
     evolution: [
         { year: 2005, value: 12.4 },

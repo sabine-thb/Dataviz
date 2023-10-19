@@ -125,7 +125,6 @@ p{
 /*On met en place la 3ème slide*/
 
 .trois{
-    width:100%;
     height: 100vh;
     display:grid;
     grid-template-areas: 
@@ -142,22 +141,35 @@ p{
     grid-area: choix;
 }
 
-.facteurs{
-    background-color: rgba(180, 188, 150, 0.70);;
-    grid-area: facteurs;
-}
-
-.evol{
-    background-color: rgba(231, 227, 210, 0.50);
-
-    ;
+.evol{  /*partie graphe evol en fonction du temps*/
+    background-color: #B4BC96;
+    border: solid 20px rgba(220, 225, 194, 0.70);
     grid-area: evol;
+    display:flex;
+    padding:30px;
+    box-sizing: border-box;
 }
+
+.facteurs{ /*partie graphe en fonction de diff facteurs*/
+    background-color: #e9e4d0;
+    border: solid 20px #fffbe8;
+    grid-area: facteurs;
+    display:flex;
+    padding:30px;
+    box-sizing: border-box;
+
+}
+
+
 
 .constat{
     background-color: #D0B48F;
     grid-area: constat;
 }
+
+
+
+
 
 
 

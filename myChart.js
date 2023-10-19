@@ -1,8 +1,76 @@
 
 import {dataMonde, datAfrique, datAsie, datAmlat} from './data.js'
 
+new Chart(
+  document.getElementById('myChart'),
+  {
+    type: 'line',
+    data:{
+      labels: dataMonde.evolution.map(row => row.year),
+      datasets: [
+        {
+          label: 'Evolution de la population en sous nutrition',
+          data: dataMonde.evolution.map(row => row.value),
+          pointRadius: 8, // Réglez la taille des points à 8 pixels
+          pointBackgroundColor: '#890D3A',
+          pointBorderColor: 'transparent',
+          borderColor:'black',
+          borderWidth:1.8,         
+        }
+        
+      ]
+      
+    },
+
+    options:{
+      scales: {
+        x: {        
+            grid: {
+                color: 'white' // Définir la couleur de la grille en blanc
+            },
+            ticks: {
+                color: 'black', // Définir la couleur des labels en blanc
+                
+            },
+        },
+        y: {
+           display: true,
+           min: 0,
+           max: 25,
+           padding:80,
+            grid: {
+                color: 'white', // Définir la couleur de la grille en blanc
+            },
+            ticks: {
+                stepSize: 5,
+                padding: 10,
+                color: 'black' // Définir la couleur des labels en 
+
+            },
+            
+        }
+      },
+      plugins: {
+        legend: {
+          display: false // Pour masquer la légende
+          }
+      }
+        
+        // maintainAspectRatio:true,
+
+    }
+    
+
+
+  },
+
+  
+  );
+
+  //je mets en place le deuxième graphique
+
   new Chart(
-    document.getElementById('myChart'),
+    document.getElementById('myChart2'),
     {
       type: 'bar',
       data: {
@@ -68,73 +136,7 @@ import {dataMonde, datAfrique, datAsie, datAmlat} from './data.js'
     }
   );
 
-  //Je mets en place le deuxième graphique 
 
-  new Chart(
-    document.getElementById('myChart2'),
-    {
-      type: 'line',
-      data:{
-        labels: dataMonde.evolution.map(row => row.year),
-        datasets: [
-          {
-            label: 'Evolution de la population en sous nutrition',
-            data: dataMonde.evolution.map(row => row.value),
-            pointRadius: 8, // Réglez la taille des points à 8 pixels
-            pointBackgroundColor: '#890D3A',
-            pointBorderColor: 'transparent',
-            borderColor:'black',
-            borderWidth:1.8,         
-          }
-          
-        ]
-        
-      },
-
-      options:{
-        scales: {
-          x: {        
-              grid: {
-                  color: 'white' // Définir la couleur de la grille en blanc
-              },
-              ticks: {
-                  color: 'black', // Définir la couleur des labels en blanc
-                  
-              },
-          },
-          y: {
-             display: true,
-             min: 0,
-             max: 25,
-             padding:80,
-              grid: {
-                  color: 'white', // Définir la couleur de la grille en blanc
-              },
-              ticks: {
-                  stepSize: 5,
-                  padding: 10,
-                  color: 'black' // Définir la couleur des labels en 
-
-              },
-              
-          }
-        },
-        plugins: {
-          legend: {
-            display: false // Pour masquer la légende
-            }
-        }
-          
-          // maintainAspectRatio:true,
-
-      }
-      
-
-
-    },
-
-    
-    );
 
 
   //   function resizeChart2(newWidth, newHeight) {
