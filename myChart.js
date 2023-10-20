@@ -50,13 +50,15 @@ new Chart(
             
         }
       },
+
       plugins: {
         legend: {
           display: false // Pour masquer la légende
           }
-      }
+      },
         
-        // maintainAspectRatio:true,
+    // responsive: false, 
+    maintainAspectRatio: false, 
 
     }
     
@@ -119,10 +121,11 @@ new Chart(
 
                 },
             }
-            // maintainAspectRatio:true,
+          
 
         },
-
+        // responsive: false, 
+        maintainAspectRatio: false,
         plugins: {
         legend: {
           display: false // Pour masquer la légende
@@ -130,9 +133,6 @@ new Chart(
         },
       
     }
-
-      
-    
     }
   );
 

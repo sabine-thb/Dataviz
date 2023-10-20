@@ -1,4 +1,4 @@
-::before::after{
+*,*::after, *::before {
     box-sizing: border-box;
 }
 
@@ -74,7 +74,6 @@ section{
 /* On met en place la deuxième "slide" */
 
 .deux {
-    height: 100vh;
     background-color:#36322F ;
     padding:120px;
     box-sizing: border-box;
@@ -125,15 +124,13 @@ p{
 /*On met en place la 3ème slide*/
 
 .trois{
-    /* height: 80vh; */
     display:grid;
     grid-template-areas: 
         "choix evol evol constat"
         "choix facteurs facteurs constat"; 
     grid-template-columns: 0.6fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;       
+    grid-template-rows: 50vh 50vh;       
     background-color:#a49488 ;
-    box-sizing: border-box;
 }
 
 .choix{
@@ -148,7 +145,6 @@ p{
     display:flex;
     flex-direction: column;
     padding:30px;
-    box-sizing: border-box;
 }
 
 .facteurs{ /*partie graphe en fonction de diff facteurs*/
@@ -158,7 +154,6 @@ p{
     display:flex;
     flex-direction: column;
     padding:30px;
-    box-sizing: border-box;
 
 }
 
@@ -168,8 +163,29 @@ p{
 }
 
 .titreGraph{
-    font-size:1.2rem;
+    font-size:1.1rem;
 }
+
+
+.chartContainer{
+    max-width:100%;
+    height: 100%;
+    position: relative;    
+}
+
+
+/*
+@media(max-width="1200px"){
+    .graph1{
+        width: 70%; 
+        height: 70%; 
+    }
+    
+    .graph2{
+        width: 70%; 
+        height: 0%;
+    }
+} */
 
 
 

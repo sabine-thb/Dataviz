@@ -16,7 +16,7 @@
         </div>
         <button class="button-decouvrir" onclick="scrollToSection()">Voir le projet</button>
     </section>
-    <div class="deux" id="section2">
+    <section class="deux" id="section2">
         <div class="par1">
             <h2>QUEL EST LE PROJET ?</h2>
             <p>Dataviz est un projet de développement où nous avons fusionné nos compétences en équipes de trois pour concevoir une page web interactive. Son but est de  visualiser des données à propos d’un phénomène en perpétuelle évolution.</p>
@@ -33,16 +33,21 @@
                 </p>
         </div>
         <div class="logoMain"></div>
-    </div>
+    </section>
     <section class="trois">
         <div class="choix"></div>
         <div class="evol">
             <h2 class="titreGraph">Pourcentage de la population sous-nourrie en fonction des années</h2>
-            <!-- <canvas id="myChart" class="graph1"></canvas> -->
+            <div class="chartContainer">
+                <canvas id="myChart"></canvas>
+            </div>
         </div>
         <div class="facteurs">
             <h2 class="titreGraph">Évolution de la population en sous-nutrition en fonction de différents facteurs (%)</h2>
-            <!-- <canvas id="myChart2" class="graph2"></canvas> -->
+            <div class='chartContainer'>
+                <canvas id="myChart2"></canvas>
+            </div>
+            
         </div>
         <div class="constat"></div>
     </section>
