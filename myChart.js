@@ -9,7 +9,7 @@ new Chart(
       labels: dataMonde.evolution.map(row => row.year),
       datasets: [
         {
-          label: 'Evolution de la population en sous nutrition',
+          label: 'Pourcentage de la population en sous nutrition',
           data: dataMonde.evolution.map(row => row.value),
           pointRadius: 8, // Réglez la taille des points à 8 pixels
           pointBackgroundColor: '#890D3A',
