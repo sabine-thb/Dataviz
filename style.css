@@ -43,7 +43,7 @@ section{
 }
 
 .titre{
-    font-family:"koulenregular";
+    font-family:"koulenregular", "sans-serif";
     font-size: 5rem;
     color:#F9F5E4;
     bottom:20px;
@@ -136,7 +136,59 @@ p{
 .choix{
     background-color: #7E6B5E;
     grid-area: choix;
+    display:flex;
+    flex-direction:column;
 }
+
+.enteteChoix{
+    padding:40px 20px 50px 20px;
+}
+
+.containerTitreChoix{
+    display:flex;
+    justify-content: top;
+    align-items: center;
+}
+
+.titreChoix{
+    font-family: "koulenregular", "sans-serif";
+    font-size:2rem;
+    color:#F9F5E4;
+}
+
+.logoChoix{
+    background-image: url(./img/logo.svg);
+    background-size: cover;
+    width:50px;
+    height:50px;
+}
+
+.descrChoix{
+    font-family: "krubbold", "sans-serif";
+    color:#F9F5E4;
+    text-align: center;
+    font-size:0.9rem;
+}
+
+.makeYourChoice{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.forme{
+    width:180px;
+    height:100px;
+    clip-path: polygon(55% 0, 100% 50%, 57% 100%, 0 100%, 0 0);
+    background-color: #FFF5DC;
+    transition:0.2s ease-in-out;
+}
+
+.forme:hover{
+    width:200px;
+}
+
+
 
 .evol{  /*partie graphe evol en fonction du temps*/
     background-color: #B4BC96;

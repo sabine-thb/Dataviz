@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./fonts.css">
     <link rel="icon" href="./img/Logo.svg">
 </head>
+
 <body>
     <section class="accueil">
         <div class="presentation">
@@ -19,23 +21,45 @@
     <section class="deux" id="section2">
         <div class="par1">
             <h2>QUEL EST LE PROJET ?</h2>
-            <p>Dataviz est un projet de développement où nous avons fusionné nos compétences en équipes de trois pour concevoir une page web interactive. Son but est de  visualiser des données à propos d’un phénomène en perpétuelle évolution.</p>
+            <p>Dataviz est un projet de développement où nous avons fusionné nos compétences en équipes de trois pour
+                concevoir une page web interactive. Son but est de visualiser des données à propos d’un phénomène en
+                perpétuelle évolution.</p>
         </div>
 
         <div class="par2">
             <h2> ET POURQUOI CE SUJET ?</h2>
-            <p>Nous avons opté pour l'étude du phénomène de l'évolution des populations en situation de sous-nutrition à l'échelle mondiale car c'est un problème humanitaire majeur qui nécessite une attention particulière. Nous avons, via cette étude, tenté de comprendre les facteurs qui influencent cette évolution permanente.
+            <p>Nous avons opté pour l'étude du phénomène de l'évolution des populations en situation de sous-nutrition à
+                l'échelle mondiale car c'est un problème humanitaire majeur qui nécessite une attention particulière.
+                Nous avons, via cette étude, tenté de comprendre les facteurs qui influencent cette évolution
+                permanente.
                 <br>
-            Cette évolution implique des aspects socio-économiques, environnementaux et politiques, ce qui en fait un sujet complexe et multifactoriel. 
+                Cette évolution implique des aspects socio-économiques, environnementaux et politiques, ce qui en fait
+                un sujet complexe et multifactoriel.
                 <br>
 
-            En l'abordant, nous souhaitons développer nos compétences en matière d'analyse de données, de modélisation et de communication, tout en contribuant à une meilleure compréhension d'une question cruciale pour l'humanité à l’échelle mondiale.
-                </p>
+                En l'abordant, nous souhaitons développer nos compétences en matière d'analyse de données, de
+                modélisation et de communication, tout en contribuant à une meilleure compréhension d'une question
+                cruciale pour l'humanité à l’échelle mondiale.
+            </p>
         </div>
         <div class="logoMain"></div>
     </section>
     <section class="trois">
-        <div class="choix"></div>
+        <div class="choix">
+            <div class="enteteChoix">
+                <div class="containerTitreChoix">
+                    <div class="logoChoix"></div>
+                    <h3 class="titreChoix">world'eat</h3> 
+                </div>
+                <div class="descrChoix">Étude menée sur la sous-nutrition dans le monde</div>
+            </div>
+            <div class="makeYourChoice">
+                <div class="forme monde"></div>
+                <div class="forme afrique"></div>
+                <div class="forme asie"></div>
+                <div class="forme AmLatCar"></div>
+            </div>
+        </div>
         <div class="evol">
             <h2 class="titreGraph">Pourcentage de la population sous-nourrie en fonction des années</h2>
             <div class="chartContainer">
@@ -43,17 +67,19 @@
             </div>
         </div>
         <div class="facteurs">
-            <h2 class="titreGraph">Évolution de la population en sous-nutrition en fonction de différents facteurs (%)</h2>
+            <h2 class="titreGraph">Évolution de la population en sous-nutrition en fonction de différents facteurs (%)
+            </h2>
             <div class='chartContainer'>
                 <canvas id="myChart2"></canvas>
             </div>
-            
+
         </div>
         <div class="constat"></div>
     </section>
 
-  <script src="script.js"></script>
-  <script src="chart.js" ></script>
-  <script src="myChart.js" type="module"></script>
+    <script src="script.js"></script>
+    <script src="chart.js"></script>
+    <script src="myChart.js" type="module"></script>
 </body>
+
 </html>
