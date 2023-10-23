@@ -111,13 +111,13 @@ p{
 }
 
 .logoMain{
-    width:500px;
-    height:500px;
+    width:600px;
+    height:480px;
     background-image: url(./img/helpingHands.svg);
     background-size: cover;
     background-position: center;
     position:absolute;
-    bottom:-101px;;
+    bottom:0;
     right:0;
 }
 
@@ -174,18 +174,7 @@ p{
 }
 
 
-/*
-@media(max-width="1200px"){
-    .graph1{
-        width: 70%; 
-        height: 70%; 
-    }
-    
-    .graph2{
-        width: 70%; 
-        height: 0%;
-    }
-} */
+
 
 
 
