@@ -149,4 +149,13 @@ new Chart(
   // resizeChart2(400, 800);
 
 
+  //maintenant, on gère l'affichage des données en js
+
+  var boutonMonde = document.querySelector('.buttonMonde');
+
+  boutonMonde.addEventListener('click', () => {
+    // Changez la couleur de fond de la page
+    boutonMonde.style.fill = "white";
+  });
+
 
