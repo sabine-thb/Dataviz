@@ -1,4 +1,3 @@
-
 import {dataMonde, datAfrique, datAsie, datAmlat} from './data.js'
 
 new Chart(
