@@ -21,3 +21,7 @@ function incrementerCompteur() {
 
 // Démarrez le compteur
 setInterval(incrementerCompteur, 4000);
+
+document.querySelector(".close-popup").addEventListener("click", function() {
+    document.querySelector(".popup-background").style.display = "none";
+});

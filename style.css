@@ -138,8 +138,8 @@ p{
 .choix{
     background-color: #7E6B5E;
     grid-area: choix;
-    display:grid;
-    grid-template-rows: 1fr 3fr 1fr;
+    display:flex;
+    flex-direction:column;
 }
 
 .enteteChoix{
@@ -204,11 +204,6 @@ p{
 
 .button:hover{ /*Trouver qq chose au hover !*/
     cursor:pointer;
-}
-
-
-.compteurContainer{
-    background-color: #6C0B2F;
 }
 
 
