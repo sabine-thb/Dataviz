@@ -158,3 +158,21 @@ new Chart(
   });
 
 
+// Sélectionnez tous les éléments <use> avec la classe "button" (ou toute autre classe que vous préférez).
+const buttons = document.querySelectorAll('.buttonMonde, .buttonAfrique, .buttonAsie, .buttonAmLat');
+
+// Ajoutez un gestionnaire d'événements "click" à chaque bouton.
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    button.style.fill = '#FFFFFF'; 
+    
+    // Réinitialisez la couleur de tous les autres boutons 
+    buttons.forEach(otherButton => {
+      if (otherButton !== button) {
+        otherButton.style.fill = "#FFF5DC"; // Réinitialisez la couleur à sa valeur par défaut.
+      }
+    });
+  });
+});
+
+
