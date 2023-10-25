@@ -141,22 +141,8 @@ const myChart2=
 
 
 
-// Je sélectionne tous les éléments <use> avec la classe "button" (ou toute autre classe que vous préférez).
+// Je sélectionne tous les éléments <use> avec la classe "button" 
 const buttons = document.querySelectorAll('.button');
-
-// J'ajoute un gestionnaire d'événements "click" à chaque bouton.
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    button.style.fill = '#FFFFFF'; 
-    
-    // Je réinitialise la couleur de tous les autres boutons 
-    buttons.forEach(otherButton => {
-      if (otherButton !== button) {
-        otherButton.style.fill = "#FFF5DC"; 
-      }
-    });
-  });
-});
 
 
 //MAINTENANT JE TENTE DE CHANGER LES DONNEES EN FONCTION DU CLIC 
@@ -167,14 +153,23 @@ const dataByButtonClass = {
   buttonMonde: dataMonde,
   buttonAfrique: datAfrique,
   buttonAsie: datAsie,
-  buttonAmlat: datAmlat,
+  buttonAmLat: datAmlat,
 };
 
 
 buttons.forEach(button => {
   button.addEventListener('click', function() {
+    //Je modifie la couleur du bouton 
+    button.style.fill = '#FFFFFF'; 
+    // Je change la couelru des autres boutons
+    buttons.forEach(otherButton => {
+      if (otherButton !== button) {
+        otherButton.style.fill = "#FFF5DC"; 
+      }
+    });
     // J'obiens la classe du bouton 
     const buttonClass = button.classList[1];
+    console.log(buttonClass)
 
     // J'obtiens les données associées à la classe du bouton
     const data = dataByButtonClass[buttonClass];
