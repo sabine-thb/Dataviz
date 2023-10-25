@@ -159,6 +159,9 @@ buttons.forEach(button => {
 });
 
 
+//MAINTENANT JE TENTE DE CHANGER LES DONNEES EN FONCTION DU CLIC 
+
+
 //J'associe les données aux classes de boutons
 const dataByButtonClass = {
   buttonMonde: dataMonde,
