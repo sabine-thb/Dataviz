@@ -174,10 +174,11 @@ const dataByButtonClass = {
 buttons.forEach(button => {
   button.addEventListener('click', function() {
     // J'obiens la classe du bouton 
-    const buttonClass = button.classList[0];
+    const buttonClass = button.classList[1];
 
     // J'obtiens les données associées à la classe du bouton
     const data = dataByButtonClass[buttonClass];
+    console.log(data)
 
     // Je mets à jour les données des graphiques
     myChart1.data.labels = data.evolution.map(row => row.year);
