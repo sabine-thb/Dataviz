@@ -141,12 +141,13 @@ const myChart2=
 
 
 
+
+
+
 // Je sélectionne tous les éléments <use> avec la classe "button" 
 const buttons = document.querySelectorAll('.button');
 
-
-//MAINTENANT JE TENTE DE CHANGER LES DONNEES EN FONCTION DU CLIC 
-
+//Je change désormais les données en fonction du bouton sur lequel l'utilisateur clique
 
 //J'associe les données aux classes de boutons
 const dataByButtonClass = {

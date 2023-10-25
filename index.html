@@ -16,7 +16,7 @@
             <div class="logo"></div>
             <h1 class="titre">world'eat</h1>
         </div>
-        <button class="button-decouvrir" onclick="scrollToSection()">Voir le projet</button>
+        <button class="button-decouvrir" onclick="scrollToSection2()">Voir le projet</button>
     </section>
     <section class="deux" id="section2">
         <div class="par1">
@@ -43,9 +43,9 @@
             </p>
         </div>
         <div class="logoMain"></div>
-        <a href="#section3" class="scroll-arrow balancement">
+        <div class="scroll-arrow balancement" onclick="scrollToSection3()">
             <span></span>
-          </a>
+        </div>
         
     </section>
     <section id="section3"class="trois">
@@ -98,7 +98,10 @@
                 </svg>   
             </div>
             <div class="compteurContainer">
-                <p id="message"></p>
+                <span class="compteur">0</span>
+                <div class="message">
+                    personnes sont mortes de faim depuis que vous êtes sur ce site.
+                </div>
             </div>
         </div>
         <div class="evol">
@@ -116,14 +119,19 @@
 
         </div>
         <div class="constat">
-            <div class="ML">
-                <a class=""href=""> Mentions légales</a>
-                <div id="popupBackground" class="popup-background">
-                    <div id="popupContent" class="popup-content">
-                        <span id="closePopup" class="close-popup">X</span>
-                        <!-- Contenu à mettre pour les mentions légales -->
+            <div class="basDePage">
+                <div class="lien lienquipe">L'équipe</div>
+                <div class="popupEquipe popup-invisible"></div>
+                <div class="lien lienML">Mentions légales</div>
+                <div class="popupML popup-invisible">
+                    <div class="popup-background">
+                        <div class="popup-content">
+                            <span class="close-popup">X</span>
+                            <!-- Contenu à mettre pour les mentions légales -->
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>

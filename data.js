@@ -2,7 +2,7 @@ export const dataMonde = {
     facteur: [
         { cause: "Fléchissement économique", count: 0.62 },
         { cause: ["Fléchissement économique +", "catastrophes climatiques"], count: 1.2 },
-        { cause: "Fléchissement économique + conflits", count: 2.23 },
+        { cause: ["Fléchissement économique +", "conflits",], count: 2.23 },
         { cause: ["Fléchissement économique +", "catastrophes climatiques + conflits"], count: 3.25 },
         { cause: "Pas de fléchissement économique", count: 0.5 }
     ],
@@ -24,7 +24,7 @@ export const datAfrique = {
     facteur: [
         { cause: "Fléchissement économique", count: 0.8 },
         { cause: ["Fléchissement économique +", "catastrophes climatiques"], count: 1.55 },
-        { cause: "Fléchissement économique + conflits", count: 1.55 },
+        { cause: ["Fléchissement économique +", "conflits",], count: 1.55 },
         { cause: ["Fléchissement économique +", "catastrophes climatiques + conflits"], count: 5.2 },
         { cause: "Pas de fléchissement économique", count: 2.1 }
     ],
@@ -46,7 +46,7 @@ export const datAsie = {
     facteur: [
         { cause: "Fléchissement économique", count: 0.05 },
         { cause: ["Fléchissement économique +", "catastrophes climatiques"], count: 1 },
-        { cause: "Fléchissement économique + conflits", count: 3.1 },
+        { cause: ["Fléchissement économique +", "conflits",], count: 3.1 },
         { cause: ["Fléchissement économique +", "catastrophes climatiques + conflits"], count: 2 },
         { cause: "Pas de fléchissement économique", count: 0.05 }
     ],
@@ -68,7 +68,7 @@ export const datAmlat = {
     facteur: [
         { cause: "Fléchissement économique", count: 0.75 },
         { cause: ["Fléchissement économique +", "catastrophes climatiques"], count: 2.1 },
-        { cause: "Fléchissement économique + conflits", count: 0.05 },
+        { cause: ["Fléchissement économique +", "conflits",], count: 0.05 },
         { cause: ["Fléchissement économique +", "catastrophes climatiques + conflits"], count: 0.05 },
         { cause: "Pas de fléchissement économique", count: 0.1 }
     ],
