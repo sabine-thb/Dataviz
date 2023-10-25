@@ -92,19 +92,21 @@ p{
     line-height:1.5;
 }
 
-.par2{
+/* .par2 p{
     margin-top:60px;
-}
+
+} */
 
 .par1 p {
     color:#ffff;
-    font-size:1.2rem;
+    font-size:1.05rem;
 }
+
 .par2 p {
-    width:78%;
+    width:80%;
     height: 40%;
     color:#ffff;
-    font-size:1.2rem;
+    font-size:1.1rem;
     position:relative;
     z-index: 5;
     
@@ -259,6 +261,7 @@ p{
 .constat{
     background-color: #D0B48F;
     grid-area: constat;
+    position: relative;
 }
 
 .titreGraph{
@@ -272,17 +275,98 @@ p{
     position: relative;    
 }
 
+  @media (min-width: 1000px) {
+    .par2 p {
+      width: 80%; 
+      font-size: 1.1rem; 
+    }
+  } 
+
+   /* @media (max-width: 1000px) {
+    .par1 p {
+      width: 80%; 
+      font-size: 1rem; 
+    }
+  }  */
+  
+
+  .scroll-arrow {
+    position: absolute;
+    bottom: 40px; 
+    left: 50%;
+    cursor: pointer;
+  }
+  
+  .scroll-arrow span {
+    display: block;
+    width: 27px;
+    height: 27px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out; 
+}
+
+  .scroll-arrow:hover span {
+    width: 37px;
+    height: 37px;
+
+ }
 
 
+ .ML {
+  
+    width: 100%;
+    height: 70px;
+    background-color: #890D3A;
+    position: absolute; /* Ajoutez la propriété position absolute */
+    bottom: 0;
+  }
 
 
+  .popup-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* arrière-plan semi-transparent */
+     z-index: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); /* alou arrière-plan */
+}
 
+.popup-content {
+    background: #fff; 
+    width: 80%;
+    height: 80%;
+    max-width: 80%;
+    max-height: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
 
+.close-popup {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+/* animation fleche haut bas */
+.balancement {
+    animation: balancementAnimation 0.7s infinite alternate;
+}
 
-
-
-
-
-
-
-
+@keyframes balancementAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
