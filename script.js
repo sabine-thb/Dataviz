@@ -45,9 +45,9 @@ function incrementerCompteur() {
     compteurElement.textContent = compteur;
 
     if (compteur === 1) {
-        messageElement.innerHTML = `personne est morte de faim depuis que vous êtes sur ce site.`;
+        messageElement.innerHTML = `personne est morte de faim dans le monde depuis que vous êtes sur ce site.`;
     } else {
-        messageElement.innerHTML = `personnes sont mortes de faim depuis que vous êtes sur ce site.`;
+        messageElement.innerHTML = `personnes sont mortes de faim dans le monde depuis que vous êtes sur ce site.`;
     }
 }
 
