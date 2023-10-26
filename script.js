@@ -8,28 +8,25 @@ function scrollToSection3() {
     section.scrollIntoView({ behavior: "smooth" });
 }
 
-// POP UP
-// ouverture popup
-var ML = document.querySelector(".lienML");
-var pop1 = document.querySelector(".popupML");
+// On met en place l'ouverture des popups
+var lienPopup = document.querySelectorAll(".lien");
+var popup = document.querySelector(".popup");
+
+lienPopup.forEach(function (element) {
+    element.addEventListener('click', function() {
+        popup.classList.add('popup-visible');
+        popup.classList.remove('popup-invisible');
+    });
+});  
 
 
-
-ML.addEventListener('click', function (window) {
-    pop1.classList.add('popup-visible');
-    pop1.classList.remove('popup-invisible');
-});
-
-var textclick2 = document.querySelectorAll('.cancel');
-
-
+//On met en place la fermeture des popups
 var cancel =document.querySelectorAll(".cancel");
-
 
 cancel.forEach(function (element) {
     element.addEventListener('click', function() {
-        pop1.classList.add('popup-invisible');
-        pop1.classList.remove('popup-visible');
+        popup.classList.add('popup-invisible');
+        popup.classList.remove('popup-visible');
     });
 });   
 

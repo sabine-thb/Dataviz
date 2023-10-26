@@ -328,7 +328,7 @@ p{
 }
 
 
-  .popup-background {
+.popup-background {
     display: none;
     position: fixed;
     top: 0;
@@ -343,7 +343,7 @@ p{
     backdrop-filter: blur(5px); /* flou arrière-plan */
 }
 
-.popup-content {
+.popupML-content, .popupEquipe-content {
     background: #fff; 
     width: 80%;
     height: 80%;
