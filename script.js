@@ -8,6 +8,32 @@ function scrollToSection3() {
     section.scrollIntoView({ behavior: "smooth" });
 }
 
+// POP UP
+// ouverture popup
+var ML = document.querySelector(".lienML");
+var pop1 = document.querySelector(".popupML");
+
+
+
+ML.addEventListener('click', function (window) {
+    pop1.classList.add('popup-visible');
+    pop1.classList.remove('popup-invisible');
+});
+
+var textclick2 = document.querySelectorAll('.cancel');
+
+
+var cancel =document.querySelectorAll(".cancel");
+
+
+cancel.forEach(function (element) {
+    element.addEventListener('click', function() {
+        pop1.classList.add('popup-invisible');
+        pop1.classList.remove('popup-visible');
+    });
+});   
+
+
 
 
 //Je mets en place le compteur 
@@ -32,11 +58,7 @@ function incrementerCompteur() {
 setInterval(incrementerCompteur, 4000);
 
 
-//On met en place le popup
 
-document.querySelector(".close-popup").addEventListener("click", function() {
-    document.querySelector(".popup-background").style.display = "none";
-});
 
 //ceci ecorrespond au code des pops up de mon portrait chinois
 
@@ -97,4 +119,4 @@ document.querySelector(".close-popup").addEventListener("click", function() {
 //             console.log("texte")
 //         });
 
-//     })
+//     )
