@@ -46,63 +46,91 @@
         <div class="scroll-arrow balancement" onclick="scrollToSection3()">
             <span></span>
         </div>
-        
+
     </section>
-    <section id="section3"class="trois">
+    <section id="section3" class="trois">
         <div class="choix">
             <div class="enteteChoix">
                 <div class="containerTitreChoix">
                     <div class="logoChoix"></div>
-                    <h3 class="titreChoix">world'eat</h3> 
+                    <h3 class="titreChoix">world'eat</h3>
                 </div>
                 <div class="descrChoix">Étude menée sur la sous-nutrition dans le monde</div>
             </div>
             <div class="makeYourChoice">
                 <svg xmlns="http://www.w3.org/2000/svg" width="170" height="450" viewBox="0 0 234 619" fill="none">
                     <defs>
-                      <filter id="filter0_i_336_1317" x="0" y="0" width="234" height="144" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset dy="4"/>
-                        <feGaussianBlur stdDeviation="2"/>
-                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_336_1317"/>
-                      </filter>
-                     <g id="forme"filter="url(#filter0_i_336_1317)">
-                      <path d="M234 64.6931L146 0L0 0L0 140L146 140L234 64.6931Z" />
-                     </g>
+                        <filter id="filter0_i_336_1317" x="0" y="0" width="234" height="144"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_336_1317" />
+                        </filter>
+                        <g id="forme" filter="url(#filter0_i_336_1317)">
+                            <path d="M234 64.6931L146 0L0 0L0 140L146 140L234 64.6931Z" />
+                        </g>
                     </defs>
                     <g class=" button buttonMonde" fill="#FFFFFF">
                         <use href="#forme" y="0"></use>
                         <image x="10" y="20" width="150" height="100" xlink:href="./img/monde.svg" />
-                        <text x= "85" y="120" text-anchor="middle" fill="#000000">Monde</text>
+                        <text x="85" y="120" text-anchor="middle" fill="#000000">Monde</text>
                     </g>
                     <g class="button buttonAfrique" transform="translate(0,150)" fill="#FFF5DC">
                         <use href="#forme" y="0"></use>
                         <image x="30" y="15" width="80" height="100" xlink:href="./img/afrique.svg" />
-                        <text x= "85" y="120" text-anchor="middle" fill="#000000">Afrique</text>
+                        <text x="85" y="120" text-anchor="middle" fill="#000000">Afrique</text>
                     </g>
                     <g class=" button buttonAsie" transform="translate(0,300)" fill="#FFF5DC">
                         <use href="#forme" y="0"></use>
                         <image x="40" y="20" width="100" height="100" xlink:href="./img/asie.svg" />
-                        <text x= "85" y="120" text-anchor="middle" fill="#000000">Asie</text>
+                        <text x="85" y="120" text-anchor="middle" fill="#000000">Asie</text>
                     </g>
                     <g class=" button buttonAmLat" transform="translate(0,450)" fill="#FFF5DC">
-                        <use href="#forme"  y="0"></use>
+                        <use href="#forme" y="0"></use>
                         <image x="25" y="20" width="110" height="70" xlink:href="./img/amLatine.svg" />
-                        <text  y="110" text-anchor="middle" fill="#000000"><tspan x="85">Amérique latine</tspan> <tspan x="85" dy="1.2em">et Caraïbes</tspan></text>
+                        <text y="110" text-anchor="middle" fill="#000000">
+                            <tspan x="85">Amérique latine</tspan>
+                            <tspan x="85" dy="1.2em">et Caraïbes</tspan>
+                        </text>
                     </g>
-                    
-                </svg>   
+
+                </svg>
             </div>
-            <div class="compteurContainer">
+            <div class="basDePage">
+                <div class="liens">
+                    <div class="lien lienquipe">L'équipe</div>
+                    <div class="popup popupEquipe popup-invisible">
+                        <div class="popup-background">
+                            <div class="popupEquipe-content">
+                                <span class="cancel">X</span>
+                                <!-- Contenu à mettre pour les mentions légales -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lien lienML">Mentions légales</div>
+                    <div class="popup popupML popup-invisible">
+                        <div class="popup-background">
+                            <div class="popupML-content">
+                                <span class="cancel">X</span>
+                                <!-- Contenu à mettre pour les mentions légales -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="compteurContainer">
                 <span class="compteur">0</span>
                 <div class="message">
                     personnes sont mortes de faim depuis que vous êtes sur ce site.
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="evol">
             <h2 class="titreGraph">Part de la population sous-nourrie en fonction des années (%)</h2>
@@ -119,27 +147,7 @@
 
         </div>
         <div class="constat">
-            <div class="basDePage">
-                <div class="lien lienquipe">L'équipe</div>
-                <div class="popup popupEquipe popup-invisible">
-                    <div class="popup-background">
-                        <div class="popupEquipe-content">
-                            <span class="cancel">X</span>
-                            <!-- Contenu à mettre pour les mentions légales -->
-                        </div>
-                    </div>
-                </div>
-                <div class="lien lienML">Mentions légales</div>
-                <div class="popup popupML popup-invisible">
-                    <div class="popup-background">
-                        <div class="popupML-content">
-                            <span class="cancel">X</span>
-                            <!-- Contenu à mettre pour les mentions légales -->
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+
         </div>
     </section>
 
