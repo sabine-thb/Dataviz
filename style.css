@@ -243,6 +243,10 @@ p{
     display:none;
 }
 
+.cancel{
+    cursor:pointer;
+}
+
 
 .popup-background {
     display: none;
@@ -368,11 +372,18 @@ p{
  }
 
 
- 
-
+ @media (max-width: 1250px) {
+    .message {
+      font-size: 1rem; 
+    }
+  } 
 
 @media (max-width: 1150px) {
     p {
       font-size: 1rem; 
+    }
+
+    .compteur{
+        font-size:8rem;
     }
   } 
