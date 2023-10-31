@@ -50,8 +50,8 @@ section{
     color: #F9F5E4;
     overflow: hidden; 
     white-space: nowrap;
-/* aniamtion titre tapé  */
-    animation: typing 3s steps(14, end) ;
+    /* animation titre tapé  */
+    /* animation: typing 3s steps(14, end) ; */
 }
 
 @keyframes typing {
