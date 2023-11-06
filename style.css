@@ -315,7 +315,7 @@ p{
 }
 .compteur{
     font-family:"koulenregular", "sans-serif";
-    font-size:10rem;
+    font-size:6rem;
 }
 
 
@@ -397,6 +397,6 @@ p{
     }
 
     .compteur{
-        font-size:8rem;
+        font-size:5rem;
     }
   } 
