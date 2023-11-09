@@ -370,10 +370,14 @@ p{
     }
   } 
 .constaTitle{
-font-family: "koulenregular", sans-serif;
-font-size:2.2rem;
-color: #7E6B5E;
-margin:0;
+    font-family: "koulenregular", sans-serif;
+    font-size:2.3rem;
+    color: #363535;
+    margin:0;
+}
+
+.constatContent{
+    font-size:1.2rem;
 }
 
 
@@ -414,7 +418,12 @@ margin:0;
     .message {
       font-size: 1rem; 
     }
-  } 
+
+    .constatContent{
+        font-size: 1rem;
+    }
+ }
+  
 
 @media (max-width: 1150px) {
     p {
@@ -424,4 +433,12 @@ margin:0;
     .compteur{
         font-size:5rem;
     }
-  } 
+} 
+
+@media (max-width: 1050px) {
+
+    .constatContent{
+        font-size: 0.9rem;
+    }
+ }
+
