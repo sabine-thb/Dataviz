@@ -241,14 +241,14 @@ p{
 
 
 
-.lien{
+.lienPopup{
     color:white;
     cursor: pointer;
     transition:text-decoration 0.5s ease-in-out; /*marche pas jsp pk*/
     padding:5px;
 }
 
-.lien:hover{
+.lienPopup:hover{
     text-decoration:1px underline white;
 }
 
