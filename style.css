@@ -89,8 +89,6 @@ section{
 
 .deux {
     background-color:#36322F ;
-    padding:120px;
-    box-sizing: border-box;
     /* background-attachment: fixed; */
     position: relative;
 }
@@ -105,6 +103,10 @@ section{
 p{
     line-height:1.5;
     font-size:1.2rem;
+}
+
+.contentSection{
+    padding:120px;
 }
 
 
@@ -357,18 +359,7 @@ p{
     text-align: left;
 
 }
-
-.contenuconstat {
-    max-width: 800px; 
-    margin: 0 auto;
-    font-size: 1.2rem;
-}
-
-@media (max-width: 1250px) {
-    .contenuconstat{
-      font-size: 1rem; 
-    }
-  } 
+  
 .constaTitle{
     font-family: "koulenregular", sans-serif;
     font-size:2.3rem;
