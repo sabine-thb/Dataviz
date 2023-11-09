@@ -22,31 +22,20 @@ gsap.from('.logo',{
 
 
 const maTimeline= gsap.timeline()
+
 maTimeline.from('.projet',{
     duration:1,
     x:-1000,
     opacity:0,
-    scrollTrigger:{
-                trigger : ".projet",
-                toggleActions : 'restart none none none'
-    }
-})
-
-maTimeline.from('.projetContent',{
-    duration:1,
-    x:-1000,
-    opacity:0,
-    
 })
 
 maTimeline.from('.sujet',{
     duration:1,
     x:-1000,
-    opacity:0,
+    opacity:0,  
 })
 
-maTimeline.from('.sujetContent',{
+maTimeline.from('.sujetContent','.projetContent',{
     duration:1,
-    x:-1000,
     opacity:0,
 })

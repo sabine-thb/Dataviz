@@ -345,10 +345,21 @@ p{
     background-color: #D0B48F;
     grid-area: constat;
     position: relative;
+    
 }
 
 .titreGraph{
     font-size:1.1rem;
+}
+.exp{
+    padding:30px;
+
+}
+.constaTitle{
+font-family: "koulenregular", sans-serif;
+font-size:2.2rem;
+color: #7E6B5E;
+margin:0;
 }
 
 
