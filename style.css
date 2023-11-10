@@ -363,13 +363,14 @@ p{
 .constaTitle{
     font-family: "koulenregular", sans-serif;
     font-size:2.3rem;
-    color: #7E6B5E;
+    color: #402710;
     margin:0;
     line-height: 1.2;
 }
 
 .constatContent{
     font-size:1.2rem;
+    color: #402710;
 }
 
 

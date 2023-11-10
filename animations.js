@@ -13,7 +13,7 @@ gsap.from('.logo',{
 })
 
 gsap.from('.projet',{
-    duration:2,
+    duration:1.5,
     x:-1000,
     opacity:0,
     scrollTrigger:{
@@ -23,10 +23,10 @@ gsap.from('.projet',{
 })
 
 gsap.from('.sujet',{
-    duration:2,
+    duration:1.5,
     x:-1000,
     opacity:0,  
-    delay:2,
+    delay:1.5,
     scrollTrigger:{
         trigger : ".deux",
         toggleActions : 'restart none none none'
