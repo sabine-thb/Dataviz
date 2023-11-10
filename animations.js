@@ -1,13 +1,5 @@
-// const titrePresent = document.querySelector('.titre').textContent
-// gsap.set('.titre', {text:''})
-// gsap.to('.titre',{
-//     text:titrePresent,
-//     duration:2,
-// })
 
-// animation texte tapé juste au dessus
-
-
+//animation du titre et du logo
 gsap.from('.titre',{
     duration:2,
     x:1000,
@@ -20,22 +12,32 @@ gsap.from('.logo',{
     opacity:0,
 })
 
-
-const maTimeline= gsap.timeline()
-
-maTimeline.from('.projet',{
-    duration:1,
+gsap.from('.projet',{
+    duration:2,
     x:-1000,
     opacity:0,
+    scrollTrigger:{
+        trigger : ".deux",
+        toggleActions : 'restart none none none'
+    }
 })
 
-maTimeline.from('.sujet',{
-    duration:1,
+gsap.from('.sujet',{
+    duration:2,
     x:-1000,
     opacity:0,  
+    delay:2,
+    scrollTrigger:{
+        trigger : ".deux",
+        toggleActions : 'restart none none none'
+    }
 })
 
-maTimeline.from('.sujetContent','.projetContent',{
-    duration:1,
+gsap.from('.projetContent, .sujetContent',{
+    duration:6,
     opacity:0,
+    scrollTrigger:{
+        trigger : ".deux",
+        toggleActions : 'restart none none none'
+    }
 })
