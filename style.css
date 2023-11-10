@@ -365,6 +365,7 @@ p{
     font-size:2.3rem;
     color: #7E6B5E;
     margin:0;
+    line-height: 1.2;
 }
 
 .constatContent{
@@ -424,12 +425,18 @@ p{
     .compteur{
         font-size:5rem;
     }
-} 
-
-@media (max-width: 1050px) {
 
     .constatContent{
         font-size: 0.9rem;
     }
- }
+
+
+} 
+
+/* @media (max-width: 1050px) {
+
+    .constatContent{
+        font-size: 0.9rem;
+    }
+ } */
 
