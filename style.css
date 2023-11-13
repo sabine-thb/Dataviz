@@ -14,7 +14,7 @@ body {
 /* On met en place la première "slide" */
 
 .deux, .trois {
-    width:100vh;
+    width:100%;
 }
 
 .accueil {
