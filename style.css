@@ -311,6 +311,41 @@ p{
     justify-content: center;
     gap:10px;
 }
+/*test en grid pour positionner 3 images
+ .photos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 6px;
+}
+.photo{
+    
+    overflow: hidden;
+    border-radius: 50%;
+}
+.photo img {
+    width: 80%;
+    height: 80%;
+    border: 2px solid black; 
+    border-radius:50%;
+} */
+.photos {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+
+}
+
+.photo img {
+    width: 80%;
+    height: 80%;
+    border: 2px solid black; 
+    border-radius: 50%;
+    margin-left: 40px;
+}
+.photo{
+position: relative;
+border-radius: 50%;
+}
 
 .message{
     font-size:1.2rem;
@@ -320,8 +355,6 @@ p{
     font-family:"koulenregular", "sans-serif";
     font-size:6rem;
 }
-
-
 
 
 
