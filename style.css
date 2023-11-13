@@ -13,11 +13,12 @@ body {
 
 /* On met en place la première "slide" */
 
-section{
-    height:100vh;
+.deux, .trois {
+    width:100vh;
 }
 
 .accueil {
+    height:100vh;
     width: 100%;
     background: url('./img/enfant.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -331,20 +332,20 @@ p{
 .photos {
     display: flex;
     gap: 3px;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
 
 }
 
 .photo img {
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     border: 2px solid black; 
     border-radius: 50%;
-    margin-left: 40px;
 }
+
 .photo{
-position: relative;
-border-radius: 50%;
+text-align: center;
 }
 
 .message{
