@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./fonts.css">
     <link rel="icon" href="./img/logo.svg">
 </head>
+
 <body>
     <section class="accueil">
         <div class="presentation">
@@ -21,19 +22,23 @@
         <div class="contentSection">
             <div class="par1">
                 <h2 class="projet">QUEL EST LE PROJET ?</h2>
-                <p class="projetContent">Dataviz est un projet de développement où nous avons fusionné nos compétences en équipes de trois pour
+                <p class="projetContent">Dataviz est un projet de développement où nous avons fusionné nos compétences
+                    en équipes de trois pour
                     concevoir une page web interactive. Son but est de visualiser des données à propos d’un phénomène en
                     perpétuelle évolution. rrrrr</p>
             </div>
 
             <div class="par2">
                 <h2 class="sujet"> ET POURQUOI CE SUJET ?</h2>
-                <p class="sujetContent">Nous avons opté pour l'étude du phénomène de l'évolution des populations en situation de sous-nutrition à
-                    l'échelle mondiale car c'est un problème humanitaire majeur qui nécessite une attention particulière.
+                <p class="sujetContent">Nous avons opté pour l'étude du phénomène de l'évolution des populations en
+                    situation de sous-nutrition à
+                    l'échelle mondiale car c'est un problème humanitaire majeur qui nécessite une attention
+                    particulière.
                     Nous avons, via cette étude, tenté de comprendre les facteurs qui influencent cette évolution
                     permanente.
                     <br>
-                    Cette évolution implique des aspects socio-économiques, environnementaux et politiques, ce qui en fait
+                    Cette évolution implique des aspects socio-économiques, environnementaux et politiques, ce qui en
+                    fait
                     un sujet complexe et multifactoriel.
                     <br>
 
@@ -111,20 +116,20 @@
                             <div class="popupEquipe-content">
                                 <span class="cancel"> <img src="./img/croix.svg" alt=""></span>
                                 <!-- Contenu à mettre pour les mentions légales -->
-                                <div class="photos">
-                                    <div class="photo"> 
-                                        <img src="./img/photo1.png" alt="">
-                                        <h3>Sabine, développeuse </h3>
+                                <div class="equipe">
+                                    <div class="Sabine">
+                                        <div class="photo Sabine"></div>
+                                        <h3>Sabine <br> <span class="role">Développeuse full-stack</span> </h3>
                                     </div>
-                                    <div class="photo"> 
-                                        <img src="./img/photo1.png" alt="">
-                                        <h3>Rihab, développeuse</h3>
+                                    <div class="Rihab">
+                                        <div class="photo Rihab"></div>
+                                        <h3>Rihab <br> <span class="role">Développeuse front</span></h3>
                                     </div>
-                                    <div class="photo"> 
-                                        <img src="./img/photo1.png" alt="">
-                                        <h3>Adelina, graphiste et rédactrice</h3>
+                                    <div class="Adelina">
+                                        <div class="photo Adelina"></div>
+                                        <h3>Adelina <br> <span class="role">Graphiste et rédactrice</span></h3>
                                     </div>
-                            </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,7 +137,7 @@
                     <div class="popup popupML popup-invisible" id="popup2">
                         <div class="popup-background">
                             <div class="popupML-content">
-                                <span class="cancel"><img src="./img/croix.svg" alt="" ></span>
+                                <span class="cancel"><img src="./img/croix.svg" alt=""></span>
                                 <div>mentions legales</div>
                                 <!-- Contenu à mettre pour les mentions légales -->
                             </div>
@@ -141,7 +146,7 @@
                 </div>
 
             </div>
-            
+
         </div>
         <div class="evol">
             <h2 class="titreGraph">Part de la population sous-nourrie en fonction des années (%)</h2>
@@ -159,20 +164,31 @@
         </div>
         <div class="constat">
             <div class="exp">
-           
-            <h2 class="constaTitle">Ce que nous constatons</h2>
-            <p class="constatContent"> Comme on peut le constater, dans le monde, la part de la population sous-nourrie est nettement moins élevée qu’en Afrique. En 2020, on trouve une différence de 52,4% de population sous-nourrie entre les deux. 
 
-            En effet cela s’explique par les facteurs entrainant la sous-nutrition (fléchissements économiques, catastrophes climatiques ainsi que les conflits) qui sont en moyenne multipliés par trois en Afrique en 2020.
-                
-            Globalement, il existe différence considérable entre le continent africain et les autres continents.</p>
-            
-         </div>
+                <h2 class="constaTitle">Ce que nous constatons</h2>
+                <p class="constatContent"> Comme on peut le constater, dans le monde, la part de la population
+                    sous-nourrie est nettement moins élevée qu’en Afrique. En 2020, on trouve une différence de 52,4% de
+                    population sous-nourrie entre les deux.
+
+                    En effet cela s’explique par les facteurs entrainant la sous-nutrition (fléchissements économiques,
+                    catastrophes climatiques ainsi que les conflits) qui sont en moyenne multipliés par trois en Afrique
+                    en 2020.
+
+                    Globalement, il existe différence considérable entre le continent africain et les autres continents.
+                </p>
+            </div>
             <div class="compteurContainer">
-                <span class="compteur">0</span>
-                <div class="message">
-                    personnes sont mortes de faim dans le monde depuis que vous êtes sur ce site.
+                <img src="./img/information.svg" alt="infomations sur le compteur" class="info">
+                <div class="textInfo">En 2022, 238 ONG locales et internationales expriment leur indignation face à la
+                crise alimentaire mondiale qui prend des proportions alarmantes : on estime aujourd’hui qu’une
+                personne meurt de faim toutes les quatre secondes. </div>
+                <div class="compteurFlex">
+                    <span class="compteur">0</span>
+                    <div class="message">
+                        personnes sont mortes de faim dans le monde depuis que vous êtes sur ce site.
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -181,9 +197,9 @@
     <script src="chart.js"></script>
     <script src="myChart.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
-     <script src="animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="animations.js"></script>
 </body>
 
 </html>

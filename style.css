@@ -158,7 +158,7 @@ p{
         "choix evol evol constat"
         "choix facteurs facteurs constat"; 
     grid-template-columns: 0.6fr 1fr 1fr 1fr;
-    grid-template-rows: 50vh 50vh;       
+    grid-template-rows: 50% 50%;       
     background-color:#a49488 ;
 }
 
@@ -174,7 +174,7 @@ p{
 
 .containerTitreChoix{
     display:flex;
-    justify-content: top;
+    justify-content: center;
     align-items: center;
 }
 
@@ -198,26 +198,6 @@ p{
     font-size:0.9rem;
 }
 
-.makeYourChoice{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-}
-
-.forme{
-    width:180px;
-    height:120px;
-    clip-path: polygon(55% 0, 100% 50%, 57% 100%, 0 100%, 0 0);
-    background-color: #FFF5DC;
-    transition:0.2s ease-in-out;
-}
-
-.contentContainer{
-    width:150px;
-    height:120px;
-    display:flex;
-    flex-direction:column;
-}
 
 .button{
     transition:0.2s ease-in-out;
@@ -264,6 +244,11 @@ p{
     cursor:pointer;
 }
 
+.popup{
+    position: relative;
+    z-index: 1000;
+}
+
 
 .popup-background {
     display: none;
@@ -307,41 +292,81 @@ p{
     background-color: #680b2d;
     padding:20px;
     color: white;
-    display: flex;
+}
+
+.compteurFlex{ display: flex;
     align-items: center;
     justify-content: center;
     gap:10px;
+    padding-top:30px;
 }
-/*test en grid pour positionner 3 images
- .photos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 6px;
+
+/*ici le petit logo informatif du compteur*/
+.info{
+    position:absolute;
+    top:20px;
+    right:20px;
+    cursor:pointer;
 }
-.photo{
-    
-    overflow: hidden;
-    border-radius: 50%;
+/*Je mets en place le texte qui s'affiche qque au hover du logo infos*/
+
+.textInfo{
+    display: none;
+    line-height: 1.2;
+    z-index: 1000;
 }
-.photo img {
-    width: 80%;
-    height: 80%;
-    border: 2px solid black; 
-    border-radius:50%;
-} */
-.photos {
+
+.info:hover ~ .compteurFlex {
+    display: none; /* Afficher le texte lorsqu'on survole l'élément .info */
+}
+
+.info:hover ~ .textInfo {
+    display: block; /* Afficher le texte lorsqu'on survole l'élément .info */
+}
+
+/*Mise en place du popup de l'équipe*/
+.equipe {
     display: flex;
-    gap: 3px;
+    gap: 100px;
     align-items: flex-start;
     justify-content: center;
 
 }
 
-.photo img {
-    width: 60%;
-    height: 60%;
+.Sabine, .Rihab, .Adelina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.photo{
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
     border: 2px solid black; 
     border-radius: 50%;
+}
+
+.photo.Sabine{
+    background-image: url(./img/sabine.png)
+}
+.photo.Rihab{
+    background-image: url(./img/photo1.png)
+}
+.photo.Adelina{
+    background-image: url(./img/photo1.png)
+}
+
+h3{
+    max-width:200px;
+    text-align: center;
+}
+
+.role{
+    font-size:1rem;
 }
 
 .photo{
@@ -451,6 +476,12 @@ text-align: center;
     }
  }
   
+@media(max-width:1200px){
+    .equipe {
+        gap: 50px;
+    
+    }
+}
 
 @media (max-width: 1150px) {
     p {
