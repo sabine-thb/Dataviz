@@ -301,6 +301,11 @@ p{
     font-size: 24px;
 }
 
+.compteurFlex{
+    display: flex;
+    gap:10px;
+}
+
 .compteurContainer{
     width:100%;
     height:200px;
@@ -331,32 +336,75 @@ p{
     border: 2px solid black; 
     border-radius:50%;
 } */
-.photos {
+
+/*Je mets en place le popup equipe*/
+
+.equipe {
     display: flex;
     gap: 3px;
-    align-items: center;
+    gap: 100px;
+    align-items: flex-start;
+    justify-content: center;
 
 }
 
-.photo img {
-    width: 80%;
-    height: 80%;
+.photo{
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
     border: 2px solid black; 
     border-radius: 50%;
-    margin-left: 40px;
-}
-.photo{
-position: relative;
-border-radius: 50%;
 }
 
-.message{
-    font-size:1.2rem;
-    line-height: 1.2;
+.photo.Sabine{
+    background-image: url(./img/sabine.png)
 }
+.photo.Rihab{
+    background-image: url(./img/photo1.png)
+}
+.photo.Adelina{
+    background-image: url(./img/photo1.png)
+}
+
+h3{
+    max-width:200px;
+    text-align: center;
+}
+
+.role{
+    font-size:1rem;
+}
+
+.photo{
+text-align: center;
+}
+
 .compteur{
     font-family:"koulenregular", "sans-serif";
     font-size:6rem;
+}
+
+/*ici le petit logo informatif du compteur*/
+.info{
+    position:absolute;
+    top:20px;
+    right:20px;
+    cursor:pointer;
+}
+
+.textInfo{
+    display: none;
+    line-height: 1.2;
+    z-index: 1000;
+}
+
+.info:hover ~ .compteurFlex {
+    display: none; /* Afficher le texte lorsqu'on survole l'élément .info */
+}
+
+.info:hover ~ .textInfo {
+    display: block; /* Afficher le texte lorsqu'on survole l'élément .info */
 }
 
 
@@ -452,6 +500,13 @@ border-radius: 50%;
         font-size: 1rem;
     }
  }
+
+ @media(max-width:1200px){
+    .equipe {
+        gap: 50px;
+
+    }
+}
   
 
 @media (max-width: 1150px) {
