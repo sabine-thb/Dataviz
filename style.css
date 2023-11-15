@@ -264,6 +264,11 @@ p{
     cursor:pointer;
 }
 
+.popup{
+    position:relative;
+    z-index:1000;
+}
+
 
 .popup-background {
     display: none;
@@ -304,11 +309,13 @@ p{
     justify-content: center;
     align-items: center;
     gap:10px;
+    max-width:300px;
+    line-height: 1.2;
 }
 
 .compteurContainer{
     width:100%;
-    height:200px;
+    height:250px;
     background-color: #680b2d;
     padding:20px;
     color: white;
@@ -318,52 +325,77 @@ p{
     gap:10px;
     position: relative;
 }
-/*test en grid pour positionner 3 images
- .photos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 6px;
-}
-.photo{
-    
-    overflow: hidden;
-    border-radius: 50%;
-}
-.photo img {
-    width: 80%;
-    height: 80%;
-    border: 2px solid black; 
-    border-radius:50%;
-} */
 
-/*Je mets en place le popup equipe*/
+
+.compteur{
+    font-family:"koulenregular", "sans-serif";
+    font-size:6rem;
+}
+
+/*ici le petit logo informatif du compteur*/
+.info{
+    position:absolute;
+    top:20px;
+    right:20px;
+    cursor:pointer;
+}
+
+.textInfo{
+    display: none;
+    line-height: 1.2;
+    z-index: 1000;
+    margin-right:25px;
+}
+
+.info:hover ~ .compteurFlex {
+    display: none; /* Afficher le texte lorsqu'on survole l'élément .info */
+}
+
+.info:hover ~ .textInfo {
+    display: block; /* Afficher le texte lorsqu'on survole l'élément .info */
+}
 
 .equipe {
     display: flex;
-    gap: 3px;
-    gap: 100px;
+    gap: 80px;
     align-items: flex-start;
     justify-content: center;
+    margin:60px 0px 60px 0px;
 
+}
+
+.membre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .photo{
     background-size: cover;
     background-position: center;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border: 2px solid black; 
     border-radius: 50%;
 }
 
 .photo.Sabine{
-    background-image: url(./img/sabine.png)
+    background-image: url(./img/sabine.png);
 }
 .photo.Rihab{
-    background-image: url(./img/photo1.png)
+    background-image: url(./img/rihab.png);
 }
 .photo.Adelina{
-    background-image: url(./img/photo1.png)
+    background-image: url(./img/adelina.svg);
+    background-position:top;
+}
+
+.titlePopupEquipe{
+    font-family:"koulenregular", sans-serif;
+    font-size:3rem;
+    margin-left:20px;
+    text-align: center;
 }
 
 h3{
@@ -379,33 +411,6 @@ h3{
 text-align: center;
 }
 
-.compteur{
-    font-family:"koulenregular", "sans-serif";
-    font-size:6rem;
-}
-
-/*ici le petit logo informatif du compteur*/
-.info{
-    position:absolute;
-    margin:10px;
-    top:20px;
-    right:20px;
-    cursor:pointer;
-}
-
-.textInfo{
-    display: none;
-    line-height: 1.2;
-    z-index: 1000;
-}
-
-.info:hover ~ .compteurFlex {
-    display: none; /* Afficher le texte lorsqu'on survole l'élément .info */
-}
-
-.info:hover ~ .textInfo {
-    display: block; /* Afficher le texte lorsqu'on survole l'élément .info */
-}
 
 
 
@@ -523,6 +528,15 @@ text-align: center;
 
     .constatContent{
         font-size: 0.9rem;
+    }
+
+    .equipe {
+        gap: 50px;
+    }
+
+    .photo{
+        width:200px;
+        height:200px;
     }
 
 
