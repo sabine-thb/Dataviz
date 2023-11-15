@@ -19,7 +19,6 @@ body {
 
 .accueil {
     height:100vh;
-    width: 100%;
     background: url('./img/enfant.jpg') no-repeat center center fixed;
     background-size: cover;
     box-shadow: 0 0 40px rgba(0, 0, 0, 1);
@@ -89,6 +88,7 @@ body {
 /* On met en place la deuxième "slide" */
 
 .deux {
+    height:100vh;
     background-color:#36322F ;
     /* background-attachment: fixed; */
     position: relative;
@@ -160,6 +160,7 @@ p{
     grid-template-columns: 0.6fr 1fr 1fr 1fr;
     grid-template-rows: 50% 50%;       
     background-color:#a49488 ;
+    min-height: 100vh;
 }
 
 .choix{
