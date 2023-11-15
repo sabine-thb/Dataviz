@@ -89,7 +89,7 @@ section{
 /* On met en place la deuxième "slide" */
 
 .deux {
-    height:100vh;
+    min-height:100vh;
     background-color:#36322F ;
     /* background-attachment: fixed; */
     position: relative;
