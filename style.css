@@ -13,9 +13,7 @@ body {
 
 /* On met en place la première "slide" */
 
-section{
-    height:100vh;
-}
+
 
 .accueil {
     min-height:100vh;
@@ -159,7 +157,7 @@ p{
         "choix evol evol constat"
         "choix facteurs facteurs constat"; 
     grid-template-columns: 0.6fr 1fr 1fr 1fr;
-    grid-template-rows: 50vh 50vh;       
+    grid-template-rows: 1fr 1fr;       
     background-color:#a49488 ;
     min-height: 100vh;
 }
@@ -311,8 +309,6 @@ p{
 .compteurContainer{
     width:100%;
     height:200px;
-    position: absolute;
-    bottom:0;
     background-color: #680b2d;
     padding:20px;
     color: white;
@@ -320,6 +316,7 @@ p{
     align-items: center;
     justify-content: center;
     gap:10px;
+    position: relative;
 }
 /*test en grid pour positionner 3 images
  .photos{
@@ -390,6 +387,7 @@ text-align: center;
 /*ici le petit logo informatif du compteur*/
 .info{
     position:absolute;
+    margin:10px;
     top:20px;
     right:20px;
     cursor:pointer;
@@ -434,6 +432,9 @@ text-align: center;
     background-color: #D0B48F;
     grid-area: constat;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
 

@@ -179,7 +179,7 @@ buttons.forEach(button => {
     // Je mets à jour les données des graphiques
     myChart1.data.labels = data.evolution.map(row => row.year);
     myChart1.data.datasets[0].data = data.evolution.map(row => row.value);
-    myChart2.data.labels = data.facteur.map(row => row.cause);
+    myChart2.data.labels = data.facteur.map(row => row.cause).join("");
     myChart2.data.datasets[0].data = data.facteur.map(row => row.count);
 
     // J'actualise les graphiques
