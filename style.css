@@ -286,7 +286,7 @@ p{
 }
 
 .popupML-content, .popupEquipe-content {
-    background: #fff; 
+    background: rgb(255, 247, 233); 
     width: 80%;
     height: 80%;
     max-width: 80%;
@@ -392,10 +392,17 @@ p{
 }
 
 .titlePopupEquipe{
-    font-family:"koulenregular", sans-serif;
+    font-family: 'krubbold', sans-serif;
     font-size:3rem;
-    margin-left:20px;
     text-align: center;
+}
+.titlePopupML{
+    font-family: 'krubbold', sans-serif;
+    font-size:3rem;
+    text-align: center;
+}
+.gras{
+    font-family: 'krubbold', sans-serif;
 }
 
 h3{
