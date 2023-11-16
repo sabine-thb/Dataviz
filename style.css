@@ -1,10 +1,14 @@
-*,*::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
-html{
-    margin:0;
+
+html {
+    margin: 0;
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -13,43 +17,40 @@ body {
 }
 
 /* On met en place la première "slide" */
-
-
-
 .accueil {
-    min-height:100vh;
+    min-height: 100vh;
     width: 100%;
     background: url('./img/enfant.jpg') no-repeat center center fixed;
     background-size: cover;
     box-shadow: 0 0 40px rgba(0, 0, 0, 1);
-    position:relative;
-  
+    position: relative;
+
 }
 
-.presentation{
-    display:flex;
+.presentation {
+    display: flex;
     align-items: center;
-    justify-content:center;
-    gap:10px;
-    position:absolute;
-    top:50%;
-    left:50%;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 
 }
 
-.logo{
+.logo {
     background-image: url(./img/logo.svg);
     background-size: cover;
-    width:150px;
-    height:150px;
+    width: 150px;
+    height: 150px;
 }
 
 .titre {
     font-family: "koulenregular", sans-serif;
     font-size: 5rem;
     color: #F9F5E4;
-    overflow: hidden; 
+    overflow: hidden;
     white-space: nowrap;
     /* animation titre tapé  */
     /* animation: typing 3s steps(14, end) ; */
@@ -57,8 +58,9 @@ body {
 
 @keyframes typing {
     0% {
-        width: 0; 
+        width: 0;
     }
+
     100% {
         width: 100%;
     }
@@ -66,75 +68,100 @@ body {
 
 .button-decouvrir {
     background-color: #F9F5E4;
-    color:#36322F;
-    font-size:1.5rem;
+    color: #36322F;
+    font-size: 1.5rem;
     padding: 10px 25px;
-    text-decoration:none;
+    text-decoration: none;
     border-radius: 20px;
-    position:absolute;
-    bottom:100px;
-    left:50%;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
     transform: translate(-50%, 0);
-    border:none;
-    cursor:pointer;
+    border: none;
+    cursor: pointer;
     transition: padding 0.1s ease-in-out;
 
 }
 
-.button-decouvrir:hover{
-    padding:12px 30px;
+.button-decouvrir:hover {
+    padding: 12px 30px;
 }
 
 /* On met en place la deuxième "slide" */
 
 .deux {
-    min-height:100vh;
-    background-color:#36322F ;
-    /* background-attachment: fixed; */
+    min-height: 100vh;
+    background-color: #36322F;
     position: relative;
 }
 
 .deux h2 {
     font-family: "koulenregular";
-    color:#F9F5E4;
-    font-size:3.5rem;
-    margin:0; 
+    color: #F9F5E4;
+    font-size: 3.5rem;
+    margin: 0;
 }
 
-p{
-    line-height:1.5;
-    font-size:1.2rem;
+p {
+    line-height: 1.5;
+    font-size: 1.2rem;
 }
 
-.contentSection{
-    padding:120px;
+.contentSection {
+    padding: 120px;
 }
 
 
 
 .par1 p {
-    color:#ffff;
+    color: #ffff;
 }
 
 .par2 p {
-    width:80%;
+    width: 80%;
     height: 40%;
-    color:#ffff;
-    position:relative;
+    color: #ffff;
+    position: relative;
     z-index: 5;
-    
+
 }
 
-.logoMain{
-    width:600px;
-    height:480px;
+.logoMain {
+    width: 600px;
+    height: 480px;
     background-image: url(./img/helpingHands.svg);
     background-size: cover;
     background-position: center;
-    position:absolute;
-    bottom:0;
-    right:0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
+
+/*Ici la flèche qui oscille dans la deuxième section*/
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    cursor: pointer;
+}
+
+.scroll-arrow span {
+    display: block;
+    width: 27px;
+    height: 27px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+.scroll-arrow:hover span {
+    width: 37px;
+    height: 37px;
+
+}
+
 
 /* animation flèche haut bas */
 .balancement {
@@ -145,6 +172,7 @@ p{
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(10px);
     }
@@ -152,122 +180,120 @@ p{
 
 /*On met en place la 3ème slide*/
 
-.trois{
-    display:grid;
-    grid-template-areas: 
+.trois {
+    display: grid;
+    grid-template-areas:
         "choix evol evol constat"
-        "choix facteurs facteurs constat"; 
+        "choix facteurs facteurs constat";
     grid-template-columns: 0.6fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;       
-    background-color:#a49488 ;
+    grid-template-rows: 1fr 1fr;
+    background-color: #a49488;
     min-height: 100vh;
 }
 
-.choix{
+.choix {
     background-color: #7E6B5E;
     grid-area: choix;
-    position:relative;
+    position: relative;
 }
 
-.enteteChoix{
-    padding:40px 20px 50px 20px;
+.enteteChoix {
+    padding: 40px 20px 50px 20px;
 }
 
-.containerTitreChoix{
-    display:flex;
+.containerTitreChoix {
+    display: flex;
     justify-content: top;
     align-items: center;
 }
 
-.titreChoix{
+.titreChoix {
     font-family: "koulenregular", "sans-serif";
-    font-size:2rem;
-    color:#F9F5E4;
+    font-size: 2rem;
+    color: #F9F5E4;
 }
 
-.logoChoix{
+.logoChoix {
     background-image: url(./img/logo.svg);
     background-size: cover;
-    width:50px;
-    height:50px;
+    width: 50px;
+    height: 50px;
 }
 
-.descrChoix{
+.descrChoix {
     font-family: "krubbold", "sans-serif";
-    color:#F9F5E4;
+    color: #F9F5E4;
     text-align: center;
-    font-size:0.9rem;
+    font-size: 0.9rem;
 }
 
-.makeYourChoice{
+.makeYourChoice {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
 }
 
-.forme{
-    width:180px;
-    height:120px;
+.forme {
+    width: 180px;
+    height: 120px;
     clip-path: polygon(55% 0, 100% 50%, 57% 100%, 0 100%, 0 0);
     background-color: #FFF5DC;
-    transition:0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
-.contentContainer{
-    width:150px;
-    height:120px;
-    display:flex;
-    flex-direction:column;
+.contentContainer {
+    width: 150px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
 }
 
-.button{
-    transition:0.2s ease-in-out;
+.button {
+    transition: 0.2s ease-in-out;
 }
 
-.button:hover{ /*Trouver qq chose au hover !*/
-    cursor:pointer;
+.button:hover {
+    /*Trouver qq chose au hover !*/
+    cursor: pointer;
 }
 
 
-/*On met en place le popup des mentions légales*/
+/*Ici les éléments communs aux deux popup*/
 
-.basDePage{
-    width:100%;
-    height:80px;
-    display:flex;
+.basDePage {
+    /*section rose ou se troivent les deux liens de popup*/
+    width: 100%;
+    height: 80px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #680b2d;
-    position:absolute;
-    bottom:0;
+    position: absolute;
+    bottom: 0;
 }
 
 
-
-
-.lienPopup{
-    color:white;
+.lienPopup {
+    color: white;
     cursor: pointer;
-    transition:text-decoration 0.5s ease-in-out; /*marche pas jsp pk*/
-    padding:5px;
+    transition: text-decoration 0.5s ease-in-out;
+    /*marche pas jsp pk*/
+    padding: 5px;
 }
 
-.lienPopup:hover{
-    text-decoration:1px underline white;
+.lienPopup:hover {
+    text-decoration: 1px underline white;
 }
 
-.popup-invisible{
-    display:none;
+
+.popup-invisible {
+    display: none;
 }
 
-.cancel{
-    cursor:pointer;
-}
-
-.popup{
-    position:relative;
-    z-index:1000;
+.popup {
+    position: relative;
+    z-index: 1000;
 }
 
 
@@ -278,16 +304,19 @@ p{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* arrière-plan semi-transparent */
-    z-index: 1; 
+    background: rgba(0, 0, 0, 0.5);
+    /* arrière-plan semi-transparent */
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(5px); /* flou arrière-plan */
+    backdrop-filter: blur(5px);
+    /* flou arrière-plan */
 }
 
-.popupML-content, .popupEquipe-content {
-    background: rgb(255, 247, 233); 
+.popupML-content,
+.popupEquipe-content {
+    background: rgb(255, 247, 233);
     width: 80%;
     height: 80%;
     max-width: 80%;
@@ -297,244 +326,237 @@ p{
     position: relative;
 }
 
-.close-popup {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+.cancel {
+    /*Croix pour fermer le popup*/
     cursor: pointer;
-    font-size: 24px;
 }
 
-.compteurFlex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:10px;
-    max-width:300px;
-    line-height: 1.2;
+/*Ici les éléments propres au popup des Mentions légales*/
+
+.titlePopupML {
+    font-family: 'krubbold', sans-serif;
+    font-size: 3rem;
+    text-align: center;
 }
 
-.compteurContainer{
-    width:100%;
-    height:250px;
-    background-color: #680b2d;
-    padding:20px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:10px;
-    position: relative;
+.gras {
+    font-family: 'krubbold', sans-serif;
 }
 
-
-.compteur{
-    font-family:"koulenregular", "sans-serif";
-    font-size:6rem;
+h3 {
+    max-width: 200px;
+    text-align: center;
 }
 
-/*ici le petit logo informatif du compteur*/
-.info{
-    position:absolute;
-    top:20px;
-    right:20px;
-    cursor:pointer;
+.lienPhoto{
+    color:black;
 }
 
-.textInfo{
-    display: none;
-    line-height: 1.2;
-    z-index: 1000;
-    margin-right:25px;
-}
-
-.info:hover ~ .compteurFlex {
-    display: none; /* Afficher le texte lorsqu'on survole l'élément .info */
-}
-
-.info:hover ~ .textInfo {
-    display: block; /* Afficher le texte lorsqu'on survole l'élément .info */
-}
-
+/*Ici les éléments propres au popup de l'équipe*/
 .equipe {
     display: flex;
     gap: 80px;
     align-items: flex-start;
     justify-content: center;
-    margin:60px 0px 60px 0px;
+    margin: 60px 0px 60px 0px;
 
 }
 
-.membre{
+.membre {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.photo{
+.photo {
     background-size: cover;
     background-position: center;
     width: 250px;
     height: 250px;
-    border: 2px solid black; 
+    border: 2px solid black;
     border-radius: 50%;
 }
 
-.photo.Sabine{
+.photo.Sabine {
     background-image: url(./img/sabine.png);
 }
-.photo.Rihab{
+
+.photo.Rihab {
     background-image: url(./img/rihab.png);
 }
-.photo.Adelina{
+
+.photo.Adelina {
     background-image: url(./img/adelina.svg);
-    background-position:top;
+    background-position: top;
 }
 
-.titlePopupEquipe{
+.titlePopupEquipe {
     font-family: 'krubbold', sans-serif;
-    font-size:3rem;
-    text-align: center;
-}
-.titlePopupML{
-    font-family: 'krubbold', sans-serif;
-    font-size:3rem;
-    text-align: center;
-}
-.gras{
-    font-family: 'krubbold', sans-serif;
-}
-
-h3{
-    max-width:200px;
+    font-size: 3rem;
     text-align: center;
 }
 
-.role{
-    font-size:1rem;
+.role {
+    font-size: 1rem;
 }
 
-.photo{
-text-align: center;
+.photo {
+    text-align: center;
+}
+
+/*On mets en place le compteur*/
+.compteurFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 300px;
+    line-height: 1.2;
+}
+
+.compteurContainer {
+    width: 100%;
+    height: 250px;
+    background-color: #680b2d;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+
+.compteur {
+    font-family: "koulenregular", "sans-serif";
+    font-size: 6rem;
+}
+
+.info {
+    /*ici le petit logo informatif du compteur*/
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.textInfo {
+    /*ici le texte informatif qui apprait au hover du logo*/
+    display: none;
+    line-height: 1.2;
+    z-index: 1000;
+    margin-right: 25px;
+}
+
+.info:hover~.compteurFlex {
+    display: none;
+    /* Faire disparaitre le compteur au hover du logo info */
+}
+
+.info:hover~.textInfo {
+    display: block;
+    /* Afficher le texte informatif au hover du logo info */
 }
 
 
 
 
-.evol{  /*partie graphe evol en fonction du temps*/
+.evol {
+    /*partie graphe evol en fonction du temps*/
     background-color: #B4BC96;
     border: solid 20px rgba(220, 225, 194, 0.70);
     grid-area: evol;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    padding:30px;
+    padding: 30px;
 }
 
-.facteurs{ /*partie graphe en fonction de diff facteurs*/
+.facteurs {
+    /*partie graphe en fonction de diff facteurs*/
     background-color: #e9e4d0;
     border: solid 20px #fffbe8;
     grid-area: facteurs;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    padding:30px;
+    padding: 30px;
 
 }
 
-.constat{
+.constat {
     background-color: #D0B48F;
     grid-area: constat;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
-.titreGraph{
-    font-size:1.1rem;
+.titreGraph {
+    font-size: 1.1rem;
 }
-.exp{
-    padding:30px;
+
+.exp {
+    padding: 30px;
     text-align: left;
 
 }
-  
-.constaTitle{
+
+.constaTitle {
     font-family: "koulenregular", sans-serif;
-    font-size:2.3rem;
+    font-size: 2.3rem;
     color: #402710;
-    margin:0;
+    margin: 0;
     line-height: 1.2;
 }
 
-.constatContent{
-    font-size:1.2rem;
+.constatContent {
+    font-size: 1.2rem;
     color: #402710;
 }
 
 
-.chartContainer{
-    max-width:100%;
+.chartContainer {
+    max-width: 100%;
     height: 100%;
-    position: relative;    
+    position: relative;
 }
 
 
-  
-
-  .scroll-arrow {
-    position: absolute;
-    bottom: 40px; 
-    left: 50%;
-    cursor: pointer;
-  }
-  
-  .scroll-arrow span {
-    display: block;
-    width: 27px;
-    height: 27px;
-    border: solid #fff;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out; 
-}
-
-  .scroll-arrow:hover span {
-    width: 37px;
-    height: 37px;
-
- }
 
 
- @media (max-width: 1250px) {
+/*Place aux mediaqueries*/
+
+@media (max-width: 1250px) {
     .message {
-      font-size: 1rem; 
-    }
-
-    .constatContent{
         font-size: 1rem;
     }
- }
 
- @media(max-width:1200px){
+    .constatContent {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:1200px) {
     .equipe {
         gap: 50px;
 
     }
 }
-  
+
 
 @media (max-width: 1150px) {
     p {
-      font-size: 1rem; 
+        font-size: 1rem;
     }
 
-    .compteur{
-        font-size:5rem;
+    .compteur {
+        font-size: 5rem;
     }
 
-    .constatContent{
+    .constatContent {
         font-size: 0.9rem;
     }
 
@@ -542,18 +564,10 @@ text-align: center;
         gap: 50px;
     }
 
-    .photo{
-        width:200px;
-        height:200px;
+    .photo {
+        width: 200px;
+        height: 200px;
     }
 
 
-} 
-
-/* @media (max-width: 1050px) {
-
-    .constatContent{
-        font-size: 0.9rem;
-    }
- } */
-
+}
