@@ -1,13 +1,3 @@
-function scrollToSection2() {
-    const section = document.querySelector(".deux");
-    section.scrollIntoView({ behavior: "smooth" });
-}
-
-function scrollToSection3() {
-    const section = document.querySelector(".trois");
-    section.scrollIntoView({ behavior: "smooth" });
-}
-
 // On met en place l'ouverture des popups
 var lienPopup = document.querySelectorAll(".lienPopup");
 
